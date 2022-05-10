@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 0px; 
     padding: 0px;
 }
 body{
@@ -34,11 +34,27 @@ div.filmePrincipal{
     background:linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.411)), url("../img/img-film-principal01.jpg");
 }
 div.filmePrincipal h1{
-    margin-top: 40%;
+    margin-top: 30%;
     color: white;
     margin-left: 2%;
 }
 div.filmePrincipal P{
     color: white;
     margin-left: 3%;
+}
+
+
+.botao{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 10px 0px 10px;
+    color: white;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
 }

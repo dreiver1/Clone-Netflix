@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloneflix</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <header>
         <div class="content">
-        <h1>CLONEFLIX</h1>
+        <h1>FLIX'SIMPSONS</h1>
         <nav>
             <a href="#">INICIO</a>
             <a href="#">FILMES</a>
@@ -23,10 +24,41 @@
         <div class="filmePrincipal">
             <h1>Os Simpsons: O Filme (2007)</h1>
             <P>A família mais engraçada da televisão chega pela primeira vez em uma aventura em longa-metragem.</P>
+            <div class="botoes">
+            <button class="botao"><i class="fa-solid fa-play"></i>ASSISTIR AGORA</button>      
+            <button class="botao">MAIS INFORMAÇÕES</button>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4><img src="img/img1.jpg" alt=""></h4></div>
+            <div class="item"><h4><img src="img/img2.jpg" alt=""></h4></div>
+            <div class="item"><h4><img src="img/img3.jpg" alt=""></h4></div>
+            <div class="item"><h4><img src="img/img4.jpg" alt=""></h4></div>
+            <div class="item"><h4><img src="img/img5.jpg" alt=""></h4></div>
+            <div class="item"><h4><img src="img/img6.jpg" alt=""></h4></div>
         </div>
     </main>
     <footer>
 
     </footer>
+<script src="https://kit.fontawesome.com/25808e8595.js" crossorigin="anonymous"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+    });
+</script>
 </body>
 </html>
